@@ -15,16 +15,13 @@ input3 = input()
 
 
 
-new = qrcode.QRCode(version = 1,
-				box_size = 10,
-				border = 5)
+new = qrcode.QRCode(version = 1,box_size = 10,border = 5)
 
 
 
 
 new.make(fit = True)
-img = new.make_image(fill_color = input1,
-					back_color = input2)
+img = new.make_image(fill_color = input1,back_color = input2)
 
 img.save(input3)
 
